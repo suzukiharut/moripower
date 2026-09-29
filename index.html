@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>人気の猫の種類 | MORIPOWER</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#top">MORIPOWER</a>
+      <nav aria-label="メインナビゲーション">
+        <a href="#cats">猫の種類</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <h1 id="page-title">POPULAR CAT</h1>
+      <p>人気の猫の種類</p>
+    </section>
+    <section id="cats" class="cats section-content" aria-labelledby="cats-title">
+      <h2 id="cats-title">猫の種類</h2>
+      <div class="cat-grid">
+        <article class="cat-card">
+          <img src="cat01.png" alt="石畳の上にいる雑種の猫">
+          <h3>雑種（ミックス）</h3>
+        </article>
+        <article class="cat-card">
+          <img src="cat02.png" alt="目を閉じたスコティッシュフォールド">
+          <h3>スコティッシュフォールド</h3>
+        </article>
+        <article class="cat-card">
+          <img src="cat03.png" alt="茶色と白のマンチカン">
+          <h3>マンチカン</h3>
+        </article>
+        <article class="cat-card">
+          <img src="cat04.png" alt="寝転がるアメリカンショートヘアー">
+          <h3>アメリカンショートヘアー</h3>
+        </article>
+      </div>
+    </section>
+    <section id="contact" class="contact section-content" aria-labelledby="contact-title">
+      <h2 id="contact-title">お問い合わせ</h2>
+      <!-- 送信先が未指定のため、このフォームは表示・入力確認用です。 -->
+      <form class="contact-form" onsubmit="event.preventDefault(); document.getElementById('form-status').hidden = false;">
+        <label for="email">メールアドレス（必須）</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <label for="message">お問い合わせ内容（必須）</label>
+        <textarea id="message" name="message" required></textarea>
+        <label class="consent" for="privacy">
+          <input id="privacy" name="privacy" type="checkbox" checked required>
+          <span>個人情報保護ポリシーに同意します。</span>
+        </label>
+        <p class="required-note">※必須項目は必ず入力して下さい</p>
+        <button type="submit">送信</button>
+        <p id="form-status" role="status" hidden>送信先が設定されていないため、まだ送信されていません。</p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="logo" href="#top">MORIPOWER</a>
+      <nav aria-label="フッターナビゲーション">
+        <!-- 会社概要・採用のリンク先は公開時に設定してください。 -->
+        <span>会社概要</span>
+        <span>採用</span>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
